@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table trong HTML5 </title>
+</head>
+<body>
+    <h1>Table trong HTML5</h1>
+    <table border="1" with="100%" align="center" celspacing="0" >
+        <thead>
+            <tr>
+                <th>MaSV</th>
+                <th>Ho va ten</th>
+                <th>Diem</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SV001</td>
+                <td>A</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>SV002</td>
+                <td>B</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>SV003</td>
+                <td>C</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Table voi cac thuoc yinh :colspan, rowspan, cellspacing ,
+        cellpadding,...align, bgcolor
+    </h2>
+    <!---celspacing: la khoang cahc giua cac o--->
+    <!-----Celpadding : khoang cach giua noi dung voi o chua no  -->
+    <!----bgcolor : mau cho cac phan -->
+    <table border="1" width="100%">
+        <thead bgcolor="#6689">
+            <tr>
+                <th rowspan="2" align="center">ma</th>
+                <th rowspan="2" align="center">ht</th>
+                <th colspan="3" align="center">diem</th>
+            </tr>
+            <tr>
+                <th>Toan</th>
+                <th>Van</th>
+                <th>Anh</th>
+            </tr>
+        </thead>
+        <tbody bgcolor="#6666">
+            <tr>
+                <td>SV001</td>
+                <td>A</td>
+                <td align="right">8 </td>
+                <td align="right">9 </td>
+                <td align="right">10 </td>
+            </tr>
+            <tr>
+                <td>SV003</td>
+                <td>C</td>
+                <td align="right">8</td>
+                <td align="right">9</td>
+                <td align="right">10</td>
+            </tr>
+            <tr>
+                <td>SV002</td>
+                <td>B</td>
+                <td align="right">8</td>
+                <td align="right">9</td>
+                <td align="right">10</td>
+            </tr>
+        </tbody>
+        <tfoot bgcolor="#8888">
+            <tr>
+                <td align="right" colspan="2">Max</td>
+                <td align="center">...</td>
+                <td align="center">...</td>
+                <td align="center">...</td>
+            </tr>
+            <tr>
+                <td align="right" colspan="2">Min</td>
+                <td align="center">...</td>
+                <td align="center">...</td>
+                <td align="center">...</td>
+            </tr>
+            <tr>
+                <td align="right" colspan="2">Trang Binh</td>
+                <td align="center">...</td>
+                <td align="center">...</td>
+                <td align="center">...</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

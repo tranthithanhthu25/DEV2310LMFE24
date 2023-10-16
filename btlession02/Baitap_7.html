@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      select#low {
+        width: 100%;
+      }
+      select#pre {
+        width: 100%;
+      }
+      .chọn {
+        width: 100%;
+      }
+      .pri {
+        width: 50%;
+      }
+      .category {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <table align="center" witdh="500px">
+        <thead>
+          <tr>
+            <th><h1>TO DO LIST</h1></th>
+          </tr>
+          <tr>
+            <td colspan="2"><hr /></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Item</td>
+          </tr>
+          <tr>
+            <td><input type="text" /></td>
+          </tr>
+          <tr>
+            <td>Description</td>
+          </tr>
+          <tr>
+            <td><textarea name="list" id="" cols="30" rows="10"></textarea></td>
+          </tr>
+          <tr class="chon">
+            <td class="pri">Priorit</td>
+            <td class="category">Category</td>
+          </tr>
+          <tr>
+            <td>
+              <select name="low" id="low">
+                <option value="1">Low</option>
+              </select>
+            </td>
+            <td>
+              <select name="pre" id="pre">
+                <option value="2">Presonal</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Due Date</td>
+          </tr>
+          <tr>
+            <td><input type="date" name="time" id="time" /></td>
+          </tr>
+          <tr>
+            <td>Status</td>
+          </tr>
+          <tr>
+            <td>
+              <input type="checkbox" name="chk" id="chk" />
+              <label for="chk">Done</label>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" name="submit" id="submit" /></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>
