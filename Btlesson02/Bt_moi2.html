@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tbody{
+            background-color: aquamarine;
+            color:rgba(133, 169, 98, 0.397);
+        }
+        thead{
+            color:green;
+        }
+        tfoot{
+            color:pink;
+            background-color: aquamarine;
+        }
+        input{
+            color:black;
+            background-color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form align="center">
+        <table border="1" celpadding="10" width="100%">
+            <thead>
+                <tr>
+                    <th colspan="2">        
+                        <h1>Phiếu đăng ký tham gia trương chình khuyến mại</h1>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Họ và Tên
+                        <td>
+                            <input type="text" name="ht" id="ht" placeholder="Nguyễn Ngọc Quỳnh Nga">
+                        </td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Địa chỉ
+                    <td>
+                        <input type="text" name="dc" id="dc" placeholder="Bia Hùng Vương">                    
+                    </td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Điện Thoại
+                        <td>
+                            <input type="tel" name="phone" id="phone" pattern="[0-9{3}[0-9]{2}[0-9]{3}]" value="09655433222">
+                        </td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Phái
+                        <td>
+                            <input type="radio" name="rd" id="rd1" >
+                            <label for="">Nam</label>
+                            <input type="radio" name="rd" id="rd2" checked >
+                            <label for="">Nu</label>
+                        </td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Nghề nghiệp
+                        <td>
+                            <select name="nghe" id="nghe">
+                                <option value="1">Giáo Viên</option>                                
+                                <option value="2">BÁc sĩ</option>
+                                <option value="3">Y tá</option>
+                              </select>
+                        </td>
+                    </th>
+                </tr>
+                <tr>
+                    <th rowspan="4">Chọn sản phẩm tham gia
+                        <td>
+                            <input type="text" name="kdr" id="kdr" placeholder="Kem đánh răng ">
+                        </td>
+                    </th>
+                </tr>
+                <tr>
+                    <td>                            
+                        <input type="text" name="bg" id="bg" placeholder="Dầu gội đầu " >
+                    </td>
+                </tr>
+                <tr>
+                    <td>                            
+                        <input type="text" name="dgd" id="dgd" placeholder="Bột giặt">
+                    </td>
+                </tr>
+                <tr>
+                    <td>                            
+                        <input type="text" name="st" id="st" placeholder="Sữa tắm">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Số người dự đoán tham gia
+                        <td>
+                            <input type="number" name="num" id="num" value="250000" >
+                        </td>
+                    </th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>    
+                    <td colspan="2">
+                            <button>Đồng ý</button><br/>
+                            Bạn đã đăng ký thành công
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+</html>

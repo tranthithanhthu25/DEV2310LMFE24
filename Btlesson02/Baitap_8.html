@@ -6,6 +6,14 @@
     <title>Document</title>
   </head>
   <style>
+    p{
+      color:none;
+    }
+    h4,
+    h1 {
+      color:blue;
+      text-orientation: initial;
+    }
     .center {
       text-align: center;
     }
@@ -23,14 +31,20 @@
       border-radius: 100%;
       padding-bottom: 30px;
     }
+    tfoot {
+      color:blue;
+      text-align: left;
+    }
   </style>
   <body>
     <form class="center">
-      <table>
+      <table align="center">
+      <h1>Google</h1>
+      <p>Đăng nhập để tạo tài khoản khác </p>
         <thead class="form">
           <tr>
             <th>
-              <img src="../img/anhdaidien.jpg" alt="" />
+              <img src="anhdaidien.jpg" alt="" />
             </th>
           </tr>
         </thead>
@@ -56,7 +70,11 @@
             </td>
           </tr>
         </tbody>
+        <tfoot>
+          <td>Bạn cần trợ giúp ?</td>
+        </tfoot>
       </table>
+      <h4>Tạo một tài khoản </h4>
     </form>
   </body>
 </html>
